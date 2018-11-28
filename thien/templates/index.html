@@ -1,33 +1,38 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NER</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-</head>
-<body>
-<div class="container">
-    <textarea id="txtInput" cols="50" rows="10">
-
-    </textarea>
-    <button onclick="get_entity()">get</button>
-    <div id="result">
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Entity Extraction: find places, people, Organization, in documents and social media in future.</h1>
+    <div class="form-group">
+        <label for="txtInput">Paragraph:</label>
+        <textarea class="form-control" rows="10" id="txtInput"></textarea>
+    </div> 
+    
+    <br>
+    
+    <button onclick="get_entity()" class="btn btn-info">
+        <i class="fa fa fa-mortar-board" style="font-size:24px"></i>
+        Parse
+    </button>
+    <br><br>
+    <h4 class='row'>
+        <div id="loc" class="col-md-4 text-white bg-primary"></div>
+        <div id="org" class="col-md-4 text-white bg-warning" ></div>
+        <div id="per" class="col-md-4 text-white bg-danger"></div>
+    </h4>
+    <div class="jumbotron">
+        <h4 id="result">Result</h4>
     </div>
-
+    <div id="output" class=""></div>
     <script type="text/javascript">
+
         function get_entity(){
             var text = $("#txtInput").val();
-
+            $("#output").html(""); // clears out contents from earlier searches
+            $("#output").append("<h5>Click to open in Wikipedia:</h5>")
             $.post('/get_ner', {text: text}, function(result){
                 console.log(result);
                 var entities = result["entities"];
                 var sentences = result["tokenizes"];
-                var i;
+                
                 var text_result = "";
                 var start_sent = 0;
                 var color_type = "danger";
@@ -35,15 +40,23 @@
                     text_result += "<span>" + sentences.slice(0, sentences.length).join(' ') + "</span>";
                 }
 
-                for(i=0; i < entities.length; i++){
+                var count_per = 0;
+                var count_org = 0;
+                var count_loc = 0;
+                
+                for(var i=0; i < entities.length; i++){
+                    // location of entity
                     idx_start_entities = entities[i][1];
                     idx_end_entities = entities[i][2];
 
                     if(entities[i][3] == "LOC"){
                         color_type = "primary";
+                        count_loc++;
                     } else if(entities[i][3] == "PER"){
                         color_type = "danger";
+                        count_per++;
                     } else if(entities[i][3] == "ORG"){
+                        count_org++;
                         color_type = "warning";
                     } else {
                         color_type = "info";
@@ -53,14 +66,58 @@
                     text_result += "<span class='text-white bg-" + color_type +" '> " + entities[i][0] + " </span>";
                     text_result = text_result.replace(" .", ". ");
                     start_sent = idx_end_entities;
+                    
+                    var searchTerm = entities[i][0];
+                    $.ajax({
+                    url: `https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=${searchTerm}&limit=20&callback=?`,
+                    method: "GET",
+                    dataType: "jsonp",
+                    success: function(data) {
+                        
+                        
+                        for (var i = 0; i < data[1].length; i++) {
+                            $("#output").append(`<a href='${data[3][i]}' target='_blank'><div class='card horizontal hoverable'><div class='row'><div id='image${i}' class='card-image col s3 valign-wrapper'></div><div class='card-stacked col s9'><div class='card-content'><span class='card-title truncate'>${data[1][i]}</span><p>${data[2][i]}&nbsp;</p></div></div></div></div></a>`);
+                        }
+                        $.ajax({
+                            url: `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages%7Cpageterms&generator=prefixsearch&redirects=1&formatversion=2&piprop=thumbnail&pithumbsize=250&pilimit=20&wbptterms=description&gpssearch=${searchTerm}&gpslimit=20`,
+                            method: "GET",
+                            dataType: "jsonp",
+                            success: function(newData) {
+                                console.log(newData);
+                                for (var i = 0; i < 20; i++) {
+                                    if (newData.query.pages[i].hasOwnProperty("thumbnail") === true) {
+                                    $("#image" + (newData.query.pages[i].index - 1)).html(`<img src='${newData.query.pages[i].thumbnail.source}' class='responsive-img valign'>`);
+                                    } else {
+                                        $("#image" + (newData.query.pages[i].index - 1)).html("<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Article_icon_cropped.svg/512px-Article_icon_cropped.svg.png' class='responsive-img valign articleIcon'>");
+                                    }
+                                }
+                            },
+                            error: function() {
+                              console.log("second call unsuccessful");
+                            }
+                        })
+                    },
+                    error: function() {
+                      alert("Error, please try again");
+                    }
+                });
                 }
+                text_result += "<span>" + sentences.slice(start_sent, sentences.length).join(' ') + "</span>";
                 text_result += ".";
-                console.log(text_result);
+                
                 $("#result").html(text_result);
+                $("#loc").html(count_loc + " Places");
+                $("#org").html(count_org + " Organization");
+                $("#per").html(count_per + " Persons");
+
+                // Ajax search
+                
+                
             });
+                
+                
+
+
         }
     </script>
-
-</div>
-</body>
-</html>
+{% endblock %}
