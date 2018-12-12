@@ -64,7 +64,7 @@
 
                     text_result += "<span>" + sentences.slice(start_sent, idx_start_entities).join(' ') + "</span>";
                     text_result += "<span class='text-white bg-" + color_type +" '> " + entities[i][0] + " </span>";
-                    text_result = text_result.replace(" .", ". ");
+                    //text_result = text_result.replace(" .", ". ");
                     start_sent = idx_end_entities;
                     
                     var searchTerm = entities[i][0];
@@ -103,10 +103,10 @@
                 });
                 }
                 text_result += "<span>" + sentences.slice(start_sent, sentences.length).join(' ') + "</span>";
-                text_result += ".";
+                //text_result += ".";
                 
                 $("#result").html(text_result);
-                $("#loc").html(count_loc + " Places");
+                $("#loc").html(count_loc + " Location");
                 $("#org").html(count_org + " Organization");
                 $("#per").html(count_per + " Persons");
 
