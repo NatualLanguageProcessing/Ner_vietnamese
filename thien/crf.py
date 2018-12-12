@@ -3,9 +3,13 @@ import pycrfsuite
 import sklearn
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.preprocessing import LabelBinarizer
+from collections import Counter
 
 data_train_path = './data_preprocessed/train.txt'
 data_test_path = './data_preprocessed/test.txt'
+list_prev = ['đã', 'đang', 'vẫn', 'là', 'làm', 'chỉ', 'các', 'một', 'đến', 'đi', 'tại', 'ở']
+list_aft = [',', '-', '(']
+list_contain = ['-']
 
 
 
@@ -38,13 +42,14 @@ def word2features(sent, i):
     features = [
         'bias',
         'word.lower=' + word.lower(),
-        'word[-3:]=' + word[-3:],
-        'word[-2:]=' + word[-2:],
+        # 'word[-3:]=' + word[-3:],
+        # 'word[-2:]=' + word[-2:],
         'word.isupper=%s' % word.isupper(),
         'word.istitle=%s' % word.istitle(),
         'word.isdigit=%s' % word.isdigit(),
         'postag=' + postag,
-        'postag[:2]=' + postag[:2],
+        # 'postag[:2]=' + postag[:2],
+        'word.contain=%s' % (word in list_contain)
     ]
     if i > 0:
         word1 = sent[i-1][0]
@@ -54,7 +59,8 @@ def word2features(sent, i):
             '-1:word.istitle=%s' % word1.istitle(),
             '-1:word.isupper=%s' % word1.isupper(),
             '-1:postag=' + postag1,
-            '-1:postag[:2]=' + postag1[:2],
+            # '-1:postag[:2]=' + postag1[:2],
+            '-1:word.inpre=%s' % (word1 in list_prev)
         ])
     else:
         features.append('BOS')
@@ -67,10 +73,12 @@ def word2features(sent, i):
             '+1:word.istitle=%s' % word1.istitle(),
             '+1:word.isupper=%s' % word1.isupper(),
             '+1:postag=' + postag1,
-            '+1:postag[:2]=' + postag1[:2],
+            # '+1:postag[:2]=' + postag1[:2],
+            '+1:word.inaft=%s' % (word1 in list_aft)
         ])
     else:
         features.append('EOS')
+
     return features
 
 
@@ -111,7 +119,6 @@ def train():
     })
 
     print(trainer.params())
-
     trainer.train('test.crfsuite')
 
     print(trainer.logparser.last_iteration)
@@ -121,7 +128,7 @@ def test():
     tagger = pycrfsuite.Tagger()
     tagger.open('test.crfsuite')
 
-    example_sent = data_test[4:6]
+    example_sent = data_test[4]
     print(' '.join(sent2tokens(example_sent)), end='\n\n')
     print("Predicted:", ' '.join(tagger.tag(sent2features(example_sent))))
     print("Correct:  ", ' '.join(sent2labels(example_sent)))
@@ -142,13 +149,44 @@ def bio_classification_report(y_true, y_pred):
                                  target_names=tagset,
                                  )
 
-# tagger = pycrfsuite.Tagger()
-# tagger.open('test.crfsuite')
-# y_pred = [tagger.tag(xseq) for xseq in x_test]
-# print(bio_classification_report(y_test, y_pred))
+
+train()
+tagger = pycrfsuite.Tagger()
+tagger.open('test.crfsuite')
+y_pred = [tagger.tag(xseq) for xseq in x_test]
+print(bio_classification_report(y_test, y_pred))
+
+
+tagger = pycrfsuite.Tagger()
+tagger.open('test.crfsuite')
+info = tagger.info()
+def print_transitions(trans_features):
+    for (label_from, label_to), weight in trans_features:
+        print("%-6s -> %-7s %0.6f" % (label_from, label_to, weight))
+
+print("Top likely transitions:")
+print_transitions(Counter(info.transitions).most_common(15))
+
+print("\nTop unlikely transitions:")
+print_transitions(Counter(info.transitions).most_common()[-15:])
+
+
+
+def print_state_features(state_features):
+    for (attr, label), weight in state_features:
+        print("%0.6f %-6s %s" % (weight, label, attr))
+
+print("Top positive:")
+print_state_features(Counter(info.state_features).most_common(20))
+
+print("\nTop negative:")
+print_state_features(Counter(info.state_features).most_common()[-20:])
 
 
 
 
-test()
-# train()
+
+
+
+
+

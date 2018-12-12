@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9333ff5-1250-4099-bd65-7f16d87b6a84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_preprocessed/dict.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_dictionary.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lstm_char.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lstm_crf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/preprocess.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/testcase.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CRF/Ner1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CRF/Ner1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dataset/vlsp2016/dev.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../dataset/vlsp2016/dev.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dataset/vlsp2016/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../dataset/vlsp2016/test.txt" afterDir="false" />
@@ -1044,509 +1039,9 @@
       <change beforePath="$PROJECT_DIR$/../dataset/vlsp2018/raw/VLSP2018-NER-train-Jan14/Xa hoi/23353617.muc" beforeDir="false" afterPath="$PROJECT_DIR$/../dataset/vlsp2018/raw/VLSP2018-NER-train-Jan14/Xa hoi/23353617.muc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lstm/Ner.py" beforeDir="false" afterPath="$PROJECT_DIR$/../lstm/Ner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lstm/Ner_vn.py" beforeDir="false" afterPath="$PROJECT_DIR$/../lstm/Ner_vn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_preprocessed/tmp.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/material_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/material_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/pages/animate_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/pages/animate_page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/pages/extra_pages.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/pages/extra_pages.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/pages/formlayout.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/pages/formlayout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/pages/inbox.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/pages/inbox.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/pages/pricing.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/pages/pricing.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/pages/steps.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/pages/steps.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/pages/timeline.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/pages/timeline.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/pages/typography.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/pages/typography.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/plugins.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/plugins.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/theme-color.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/theme-color.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/calendar/calendar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/calendar/calendar.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/chart/chartjs/chartjs-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/chart/chartjs/chartjs-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/chart/chartjs/home-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/chart/chartjs/home-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/chart/chartjs/home-data2.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/chart/chartjs/home-data2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/chart/chartjs/home-data3.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/chart/chartjs/home-data3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/chart/echart/echart-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/chart/echart/echart-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/chart/morris/morris_chart_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/chart/morris/morris_chart_data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/chart/morris/morris_home_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/chart/morris/morris_home_data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/extra_pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/extra_pages/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/map/google-maps-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/map/google-maps-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/map/vector-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/map/vector-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/material-loading/material-loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/material-loading/material-loading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/material_select/getmdl-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/material_select/getmdl-select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/owl-carousel/owl_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/owl-carousel/owl_data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/select2/select2-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/select2/select2-init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/smart-wizard/wizard-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/smart-wizard/wizard-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/sparkline/sparkline-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/sparkline/sparkline-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/steps/steps-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/steps/steps-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/summernote/summernote-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/summernote/summernote-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/sweet-alert/sweet-alert-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/sweet-alert/sweet-alert-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/table/editable_table_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/table/editable_table_data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/table/table_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/table/table_data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/timeline/timeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/timeline/timeline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/treeview/treeview-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/treeview/treeview-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/ui/animations.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/ui/animations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/pages/validation/form-validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/pages/validation/form-validation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/theme-color.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/theme-color.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker-init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.standalone.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.standalone.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.standalone.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.standalone.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.standalone.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.standalone.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.standalone.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.standalone.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker-init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-editable/CHANGELOG.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-editable/CHANGELOG.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-editable/LICENSE-MIT" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-editable/LICENSE-MIT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-editable/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-editable/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-editable/bootstrap-editable/css/bootstrap-editable.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-editable/bootstrap-editable/css/bootstrap-editable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-editable/bootstrap-editable/js/bootstrap-editable.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-editable/bootstrap-editable/js/bootstrap-editable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-editable/bootstrap-editable/js/bootstrap-editable.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-editable/bootstrap-editable/js/bootstrap-editable.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-editable/inputs-ext/address/address.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-editable/inputs-ext/address/address.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-editable/inputs-ext/address/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-editable/inputs-ext/address/address.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-inputmask/bootstrap-inputmask.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-inputmask/bootstrap-inputmask.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-inputmask/bootstrap-inputmask.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-inputmask/bootstrap-inputmask.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-tabdrop/css/tabdrop.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-tabdrop/css/tabdrop.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-tabdrop/js/bootstrap-tabdrop.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-tabdrop/js/bootstrap-tabdrop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap-treeview/bootstrap-treeview.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap-treeview/bootstrap-treeview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/chart-js/Chart.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/chart-js/Chart.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/chart-js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/chart-js/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/counterup/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/counterup/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/counterup/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/counterup/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/counterup/jquery.counterup.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/counterup/jquery.counterup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/counterup/jquery.counterup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/counterup/jquery.counterup.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/counterup/jquery.waypoints.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/counterup/jquery.waypoints.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/datatables/datatables.all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/datatables/datatables.all.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/datatables/datatables.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/datatables/datatables.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/datatables/datatables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/datatables/datatables.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/datatables/editabletable.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/datatables/editabletable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/datatables/jquery.dataTables.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/datatables/jquery.dataTables.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/datatables/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/datatables/jquery.dataTables.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap4.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/dropzone/dropzone-call.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/dropzone/dropzone-call.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/dropzone/dropzone.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/dropzone/dropzone.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/dropzone/dropzone.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/dropzone/dropzone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/echarts/chart/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/echarts/chart/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/echarts/chart/wordCloud.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/echarts/chart/wordCloud.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/echarts/echarts-all.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/echarts/echarts-all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/echarts/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/echarts/echarts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/fullcalendar/fullcalendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/fullcalendar/fullcalendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/fullcalendar/fullcalendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/fullcalendar/fullcalendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/fullcalendar/fullcalendar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/fullcalendar/fullcalendar.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/gmaps/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/gmaps/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/gmaps/gmaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/gmaps/gmaps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/gmaps/gmaps.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/gmaps/gmaps.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/iconic/css/material-design-iconic-font.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/iconic/css/material-design-iconic-font.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/iconic/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/iconic/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-blockui/jquery.blockui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-blockui/jquery.blockui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/blueimp-gallery/jquery.blueimp-gallery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/blueimp-gallery/jquery.blueimp-gallery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/cors/postmessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/cors/postmessage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/cors/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/cors/result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/css/demo-ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/css/demo-ie8.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/css/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/css/demo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/css/jquery.fileupload-noscript.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/css/jquery.fileupload-noscript.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/css/jquery.fileupload-ui-noscript.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/css/jquery.fileupload-ui-noscript.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/css/jquery.fileupload-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/css/jquery.fileupload-ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/css/jquery.fileupload.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/css/jquery.fileupload.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/cors/jquery.postmessage-transport.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/cors/jquery.postmessage-transport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/cors/jquery.xdr-transport.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/cors/jquery.xdr-transport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload-angular.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload-angular.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload-audio.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload-audio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload-image.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload-image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload-jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload-jquery-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload-process.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload-process.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload-validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload-validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload-video.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload-video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.fileupload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.iframe-transport.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/jquery.iframe-transport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/vendor/jquery.ui.widget.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-file-upload/js/vendor/jquery.ui.widget.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-slimscroll/jquery.slimscroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-slimscroll/jquery.slimscroll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-tags-input/jquery-tags-input-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-tags-input/jquery-tags-input-init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-tags-input/jquery-tags-input.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-tags-input/jquery-tags-input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-tags-input/jquery-tags-input.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-tags-input/jquery-tags-input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/bower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/demos/css/jquery.toast.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/demos/css/jquery.toast.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/demos/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/demos/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/demos/js/jquery.toast.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/demos/js/jquery.toast.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/dist/jquery.toast.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/dist/jquery.toast.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/dist/jquery.toast.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/dist/jquery.toast.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/dist/toast.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/dist/toast.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/src/jquery.toast.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/src/jquery.toast.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/src/jquery.toast.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-toast/src/jquery.toast.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-ui/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-ui/jquery-ui.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-ui/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-ui/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/additional-methods.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/additional-methods.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/additional-methods.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/additional-methods.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/jquery.validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/jquery.validate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/jquery.validate.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ar.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_bg.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_bg.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_bn_BD.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_bn_BD.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_bn_BD.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_bn_BD.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ca.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ca.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_cs.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_cs.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_da.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_da.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_da.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_de.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_de.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_de.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_el.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_el.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_el.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_es.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_es.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_es.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_es_AR.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_es_AR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_es_AR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_es_AR.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_es_PE.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_es_PE.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_es_PE.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_es_PE.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_et.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_et.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_et.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_et.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_eu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_eu.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_eu.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_fa.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_fa.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_fi.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_fi.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_fr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_fr.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ge.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ge.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ge.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ge.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_gl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_gl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_gl.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_he.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_he.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_he.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_he.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_hr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_hr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_hr.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_hu.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_hu.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_hy_AM.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_hy_AM.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_hy_AM.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_hy_AM.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_id.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_id.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_id.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_is.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_is.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_is.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_is.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_it.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_it.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_it.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ja.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ja.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ka.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ka.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ka.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ka.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_kk.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_kk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_kk.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_kk.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ko.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ko.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_lt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_lt.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_lt.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_lv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_lv.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_lv.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_my.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_my.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_my.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_my.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_nl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_nl.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_no.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_no.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_no.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_no.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_pl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_pl.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_pt_BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_pt_BR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_pt_BR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_pt_BR.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_pt_PT.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_pt_PT.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_pt_PT.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_pt_PT.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ro.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ro.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ru.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_ru.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_si.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_si.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_si.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_si.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sk.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sk.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sl.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sr.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sr_lat.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sr_lat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sr_lat.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sr_lat.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sv.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_sv.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_th.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_th.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_th.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_th.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_tj.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_tj.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_tj.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_tj.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_tr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_tr.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_uk.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_uk.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_vi.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_vi.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_zh.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_zh.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_zh.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_zh_TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_zh_TW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_zh_TW.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/messages_zh_TW.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_de.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_de.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_de.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_es_CL.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_es_CL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_es_CL.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_es_CL.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_fi.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_fi.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_nl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_nl.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_pt.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery-validation/js/localization/methods_pt.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jquery/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/data/jquery.vmap.sampledata.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/data/jquery.vmap.sampledata.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/jquery.vmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/jquery.vmap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/jquery.vmap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/jquery.vmap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/jquery.vmap.packed.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/jquery.vmap.packed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/jqvmap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/jqvmap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/jqvmap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/jqvmap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/continents/jquery.vmap.africa.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/continents/jquery.vmap.africa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/continents/jquery.vmap.asia.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/continents/jquery.vmap.asia.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/continents/jquery.vmap.australia.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/continents/jquery.vmap.australia.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/continents/jquery.vmap.europe.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/continents/jquery.vmap.europe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/continents/jquery.vmap.north-america.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/continents/jquery.vmap.north-america.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/continents/jquery.vmap.south-america.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/continents/jquery.vmap.south-america.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.algeria.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.algeria.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.argentina.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.argentina.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.brazil.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.brazil.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.canada.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.canada.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.europe.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.europe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.france.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.france.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.germany.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.germany.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.greece.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.greece.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.indonesia.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.indonesia.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.iran.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.iran.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.iraq.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.iraq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.new_regions_france.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.new_regions_france.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.russia.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.russia.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.serbia.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.serbia.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.tunisia.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.tunisia.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.turkey.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.turkey.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.ukraine.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.ukraine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.usa.districts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.usa.districts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.usa.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.usa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.world.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/jqvmap/maps/jquery.vmap.world.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/light-gallery/css/lightgallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/light-gallery/css/lightgallery.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/light-gallery/fonts/lg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/light-gallery/fonts/lg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/light-gallery/js/image-gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/light-gallery/js/image-gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/light-gallery/js/lightgallery-all.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/light-gallery/js/lightgallery-all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/material-datetimepicker/bootstrap-material-datetimepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/material-datetimepicker/bootstrap-material-datetimepicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/material-datetimepicker/bootstrap-material-datetimepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/material-datetimepicker/bootstrap-material-datetimepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/material-datetimepicker/bootstrap-material-design.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/material-datetimepicker/bootstrap-material-design.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/material-datetimepicker/datetimepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/material-datetimepicker/datetimepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/material-icons/iconfont/MaterialIcons-Regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/material-icons/iconfont/MaterialIcons-Regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/material-icons/iconfont/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/material-icons/iconfont/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/material-icons/iconfont/codepoints" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/material-icons/iconfont/codepoints" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/material-icons/iconfont/material-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/material-icons/iconfont/material-icons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/material/material.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/material/material.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/material/material.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/material/material.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/_template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/area-as-line.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/area-as-line.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/area.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/area.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/bar-colors.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/bar-colors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/bar-no-axes.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/bar-no-axes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/bar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/days.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/days.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/decimal-custom-hover.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/decimal-custom-hover.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/diagonal-xlabels-bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/diagonal-xlabels-bar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/diagonal-xlabels.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/diagonal-xlabels.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/donut-colors.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/donut-colors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/donut-formatter.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/donut-formatter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/donut.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/donut.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/dst.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/dst.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/goals.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/goals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/lib/example.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/lib/example.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/lib/example.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/lib/example.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/months-no-smooth.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/months-no-smooth.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/negative.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/negative.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/no-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/no-grid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/non-continuous.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/non-continuous.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/non-date.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/non-date.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/quarters.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/quarters.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/resize.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/resize.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/stacked_bars.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/stacked_bars.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/timestamps.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/timestamps.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/updating.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/updating.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/weeks.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/weeks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/examples/years.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/examples/years.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/less/morris.core.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/less/morris.core.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/lib/morris.area.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/lib/morris.area.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/lib/morris.bar.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/lib/morris.bar.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/lib/morris.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/lib/morris.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/lib/morris.donut.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/lib/morris.donut.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/lib/morris.grid.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/lib/morris.grid.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/lib/morris.hover.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/lib/morris.hover.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/lib/morris.line.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/lib/morris.line.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/morris.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/morris.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/morris.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/morris.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/morris.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/morris.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/raphael-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/raphael-min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/area/area_spec.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/area/area_spec.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/bar/bar_spec.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/bar/bar_spec.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/bar/colours.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/bar/colours.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/commas_spec.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/commas_spec.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/donut/donut_spec.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/donut/donut_spec.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/grid/auto_grid_lines_spec.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/grid/auto_grid_lines_spec.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/grid/set_data_spec.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/grid/set_data_spec.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/grid/y_label_format_spec.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/grid/y_label_format_spec.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/hover_spec.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/hover_spec.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/label_series_spec.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/label_series_spec.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/line/line_spec.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/line/line_spec.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/pad_spec.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/pad_spec.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/parse_time_spec.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/lib/parse_time_spec.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/specs.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/specs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/support/placeholder.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/support/placeholder.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/viz/examples.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/viz/examples.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/viz/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/viz/run.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/viz/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/viz/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/morris/spec/viz/visual_specs.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/morris/spec/viz/visual_specs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/owl-carousel/owl.carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/owl-carousel/owl.carousel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/owl-carousel/owl.carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/owl-carousel/owl.carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/owl-carousel/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/owl-carousel/owl.carousel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/owl-carousel/owl.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/owl-carousel/owl.theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/popper/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/popper/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/select2/css/select2.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/select2/css/select2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/select2/js/select2-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/select2/js/select2-init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/select2/js/select2.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/select2/js/select2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/simple-line-icons/License.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/simple-line-icons/License.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/simple-line-icons/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/simple-line-icons/Readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/simple-line-icons/fonts/Simple-Line-Icons.dev.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/simple-line-icons/fonts/Simple-Line-Icons.dev.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/simple-line-icons/fonts/Simple-Line-Icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/simple-line-icons/fonts/Simple-Line-Icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/simple-line-icons/icons-lte-ie7.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/simple-line-icons/icons-lte-ie7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/simple-line-icons/simple-line-icons.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/simple-line-icons/simple-line-icons.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/smart-wizard/css/smart_wizard.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/smart-wizard/css/smart_wizard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/smart-wizard/css/smart_wizard.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/smart-wizard/css/smart_wizard.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/smart-wizard/js/jquery.smartWizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/smart-wizard/js/jquery.smartWizard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/smart-wizard/js/jquery.smartWizard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/smart-wizard/js/jquery.smartWizard.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/sparkline/jquery.sparkline.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/sparkline/jquery.sparkline.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/steps/jquery.steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/steps/jquery.steps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/steps/jquery.steps.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/steps/jquery.steps.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ar-AR.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ar-AR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ar-AR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ar-AR.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-bg-BG.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-bg-BG.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-bg-BG.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-bg-BG.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ca-ES.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ca-ES.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ca-ES.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ca-ES.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-cs-CZ.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-cs-CZ.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-cs-CZ.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-cs-CZ.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-da-DK.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-da-DK.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-da-DK.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-da-DK.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-de-DE.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-de-DE.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-de-DE.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-de-DE.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-el-GR.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-el-GR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-el-GR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-el-GR.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-es-ES.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-es-ES.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-es-ES.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-es-ES.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-es-EU.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-es-EU.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-es-EU.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-es-EU.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-fa-IR.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-fa-IR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-fa-IR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-fa-IR.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-fi-FI.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-fi-FI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-fi-FI.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-fi-FI.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-fr-FR.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-fr-FR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-fr-FR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-fr-FR.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-gl-ES.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-gl-ES.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-gl-ES.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-gl-ES.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-he-IL.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-he-IL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-he-IL.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-he-IL.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-hr-HR.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-hr-HR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-hr-HR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-hr-HR.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-hu-HU.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-hu-HU.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-hu-HU.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-hu-HU.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-id-ID.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-id-ID.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-id-ID.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-id-ID.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-it-IT.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-it-IT.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-it-IT.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-it-IT.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ja-JP.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ja-JP.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ja-JP.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ja-JP.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ko-KR.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ko-KR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ko-KR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ko-KR.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-lt-LT.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-lt-LT.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-lt-LT.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-lt-LT.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-lt-LV.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-lt-LV.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-lt-LV.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-lt-LV.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-mn-MN.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-mn-MN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-mn-MN.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-mn-MN.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-nb-NO.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-nb-NO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-nb-NO.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-nb-NO.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-nl-NL.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-nl-NL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-nl-NL.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-nl-NL.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-pl-PL.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-pl-PL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-pl-PL.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-pl-PL.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-pt-BR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-pt-BR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-pt-BR.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-pt-PT.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-pt-PT.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-pt-PT.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-pt-PT.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ro-RO.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ro-RO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ro-RO.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ro-RO.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ru-RU.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ru-RU.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ru-RU.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ru-RU.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sk-SK.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sk-SK.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sk-SK.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sk-SK.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sl-SI.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sl-SI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sl-SI.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sl-SI.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sr-RS-Latin.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sr-RS-Latin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sr-RS-Latin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sr-RS-Latin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sr-RS.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sr-RS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sr-RS.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sr-RS.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sv-SE.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sv-SE.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sv-SE.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-sv-SE.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ta-IN.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ta-IN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ta-IN.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-ta-IN.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-th-TH.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-th-TH.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-th-TH.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-th-TH.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-tr-TR.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-tr-TR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-tr-TR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-tr-TR.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-uk-UA.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-uk-UA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-uk-UA.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-uk-UA.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-vi-VN.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-vi-VN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-vi-VN.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-vi-VN.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-zh-CN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-zh-CN.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-zh-CN.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-zh-TW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-zh-TW.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/lang/summernote-zh-TW.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/plugin/databasic/summernote-ext-databasic.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/plugin/databasic/summernote-ext-databasic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/plugin/databasic/summernote-ext-databasic.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/plugin/databasic/summernote-ext-databasic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/plugin/hello/summernote-ext-hello.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/plugin/hello/summernote-ext-hello.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/plugin/specialchars/summernote-ext-specialchars.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/plugin/specialchars/summernote-ext-specialchars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/summernote.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/summernote.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/summernote/summernote.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/summernote/summernote.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/plugins/sweet-alert/sweetalert.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/plugins/sweet-alert/sweetalert.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.crfsuite" beforeDir="false" afterPath="$PROJECT_DIR$/model_saved/test.crfsuite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crf.py" beforeDir="false" afterPath="$PROJECT_DIR$/crf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1559,8 +1054,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="247">
+              <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
               <folding>
                 <element signature="e#0#67#0" expanded="true" />
               </folding>
@@ -1569,9 +1064,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/testcase.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lstm_crf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
+            <state relative-caret-position="988">
               <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -1580,14 +1084,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="24" column="29" selection-start-line="23" selection-start-column="16" selection-end-line="24" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-2204">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -1595,23 +1096,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="101" column="43" lean-forward="true" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lstm_char.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="732">
+              <caret line="111" column="43" selection-start-line="111" selection-start-column="43" selection-end-line="111" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -1619,7 +1105,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2546">
+            <state relative-caret-position="570">
               <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -1631,8 +1117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/preprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+            <state relative-caret-position="5244">
+              <caret line="276" column="18" selection-start-line="276" selection-start-column="18" selection-end-line="276" selection-end-column="18" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -1669,7 +1155,6 @@
         <option value="$PROJECT_DIR$/data_preprocessed/dict.txt" />
         <option value="$PROJECT_DIR$/data_preprocessed/dict2.txt" />
         <option value="$PROJECT_DIR$/lstm_crf.py" />
-        <option value="$PROJECT_DIR$/index.py" />
         <option value="$PROJECT_DIR$/data/list_words.txt" />
         <option value="$PROJECT_DIR$/get_dictionary.py" />
         <option value="$PROJECT_DIR$/data/words.txt" />
@@ -1678,10 +1163,14 @@
         <option value="$PROJECT_DIR$/preprocess.py" />
         <option value="$PROJECT_DIR$/model.py" />
         <option value="$PROJECT_DIR$/data_preprocessing.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/testcase.txt" />
+        <option value="$PROJECT_DIR$/index.py" />
+        <option value="$PROJECT_DIR$/crf.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="960" />
     <option name="y" value="27" />
     <option name="width" value="950" />
@@ -1703,7 +1192,12 @@
             <path>
               <item name="thien" type="b2602c69:ProjectViewProjectNode" />
               <item name="thien" type="462c0819:PsiDirectoryNode" />
-              <item name="data_preprocessed" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thien" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thien" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1734,7 +1228,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.preprocess">
+  <component name="RunManager" selected="Python.crf">
+    <configuration name="crf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="thien" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="data_preprocessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="thien" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1798,27 +1313,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="thien" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="preprocess" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="thien" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1842,11 +1336,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.preprocess" />
+        <item itemvalue="Python.crf" />
         <item itemvalue="Python.index" />
+        <item itemvalue="Python.preprocess" />
         <item itemvalue="Python.data_preprocessing" />
         <item itemvalue="Python.lstm_char" />
-        <item itemvalue="Python.model" />
       </list>
     </recent_temporary>
   </component>
@@ -1864,15 +1358,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
+    <frame x="960" y="27" width="950" height="1053" extended-state="4" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984227" visible="true" weight="0.14187764" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984227" visible="true" weight="0.11339093" />
       <window_info id="Structure" order="1" sideWeight="0.50157726" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994726" weight="0.30482456" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994726" weight="0.37280703" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991228" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1894,11 +1387,6 @@
         <state relative-caret-position="469">
           <caret line="68926" column="13" lean-forward="true" selection-start-line="68926" selection-start-column="13" selection-end-line="68926" selection-end-column="13" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_preprocessed/train.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6726" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_preprocessed/dev.txt">
@@ -1952,19 +1440,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.py">
+    <entry file="file://$PROJECT_DIR$/lstm_char.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_preprocessed/train.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <caret line="106" column="3" selection-start-line="106" selection-end-line="106" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="108" column="53" selection-start-line="108" selection-start-column="53" selection-end-line="108" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
           <folding>
             <element signature="e#0#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/testcase.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lstm_crf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
+        <state relative-caret-position="988">
           <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -1972,19 +1491,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="24" column="29" selection-start-line="23" selection-start-column="16" selection-end-line="24" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2546">
+        <state relative-caret-position="570">
           <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -1994,8 +1503,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        <state relative-caret-position="5244">
+          <caret line="276" column="18" selection-start-line="276" selection-start-column="18" selection-end-line="276" selection-end-column="18" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -2004,21 +1513,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="101" column="43" lean-forward="true" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="732">
+          <caret line="111" column="43" selection-start-line="111" selection-start-column="43" selection-end-line="111" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lstm_char.py">
+    <entry file="file://$PROJECT_DIR$/crf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-2204">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="48" />
         </state>
       </provider>
     </entry>
