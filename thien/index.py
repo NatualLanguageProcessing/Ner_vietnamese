@@ -2,15 +2,17 @@ from flask import Flask, jsonify, render_template, request, url_for
 import model
 app = Flask(__name__)
 
-crf = model.CRF_Ner()
-lstm_crf = model.LSTM_CRF(load_model=True)
+sklearn_crf = model.sklear_CRF()
+#crf = model.CRF_Ner()
+#lstm_crf = model.LSTM_CRF(load_model=True)
 
 @app.route('/get_ner', methods=['GET', 'POST'])
 def get_ner():
     if request.method == "POST":
         paragraph = request.form['text']
         
-        entities, tokenizes = crf.get_entity(paragraph)
+        entities, tokenizes = sklearn_crf.get_entity(paragraph)
+#        entities, tokenizes = crf.get_entity(paragraph)
         # entities, tokenizes = lstm_crf.get_ner(paragraph)
         print(entities)
         return jsonify(dict({'entities': entities, 'tokenizes': tokenizes}))

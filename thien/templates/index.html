@@ -14,9 +14,10 @@
     </button>
     <br><br>
     <h4 class='row'>
-        <div id="loc" class="col-md-4 text-white bg-primary"></div>
-        <div id="org" class="col-md-4 text-white bg-warning" ></div>
-        <div id="per" class="col-md-4 text-white bg-danger"></div>
+        <div id="loc" class="col-md-3 text-white bg-primary"></div>
+        <div id="org" class="col-md-3 text-white bg-warning" ></div>
+        <div id="per" class="col-md-3 text-white bg-danger"></div>
+        <div id="misc" class="col-md-3 text-white bg-info"></div>
     </h4>
     <div class="jumbotron">
         <h4 id="result">Result</h4>
@@ -43,6 +44,7 @@
                 var count_per = 0;
                 var count_org = 0;
                 var count_loc = 0;
+                var count_misc = 0;
                 
                 for(var i=0; i < entities.length; i++){
                     // location of entity
@@ -60,6 +62,7 @@
                         color_type = "warning";
                     } else {
                         color_type = "info";
+                        count_misc++;
                     }
 
                     text_result += "<span>" + sentences.slice(start_sent, idx_start_entities).join(' ') + "</span>";
@@ -109,6 +112,7 @@
                 $("#loc").html(count_loc + " Location");
                 $("#org").html(count_org + " Organization");
                 $("#per").html(count_per + " Persons");
+                $("#misc").html(count_misc + " Miscellaneous");
 
                 // Ajax search
                 
